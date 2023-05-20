@@ -1,0 +1,40 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "raycast-kit",
+  "title": "Brand Guidelines",
+  "description": "Personal collection of colors, logos, and other assets quickly available",
+  "icon": "icon.png",
+  "author": "chvndler",
+  "categories": [
+    "Design Tools"
+  ],
+  "commands": [
+    {
+      "name": "open-brand-guidelines",
+      "title": "Open Brand Guidelines",
+      "description": "Show your brand's colors, logos, and other assets.",
+      "mode": "view"
+    }
+  ],
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  },
+  "dependencies": {
+    "@raycast/api": "latest",
+    "title-case": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.2.6",
+    "@types/react": "^18.2.6",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  }
+}
